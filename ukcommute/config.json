@@ -8,18 +8,18 @@
           "id": "jhivvbj",
           "type": "arc",
           "config": {
-            "dataId": "ukcommute",
-            "label": "home to work",
+            "dataId": "data",
+            "label": "id",
             "color": [
               228,
               155,
               0
             ],
             "columns": {
-              "lat0": "residence_lat",
-              "lng0": "residence_lng",
-              "lat1": "workplace_lat",
-              "lng1": "workplace_lng"
+              "lat0": "start_longitude",
+              "lng0": "start_latitude",
+              "lat1": "end_longitude",
+              "lng1": "end_latitude"
             },
             "isVisible": true,
             "visConfig": {
@@ -61,16 +61,16 @@
           "id": "1s997l7",
           "type": "point",
           "config": {
-            "dataId": "ukcommute",
-            "label": "workplace",
+            "dataId": "data",
+            "label": "id",
             "color": [
               149,
               12,
               105
             ],
             "columns": {
-              "lat": "workplace_lat",
-              "lng": "workplace_lng",
+              "lat": "end_latitude",
+              "lng": "end_longitude",
               "altitude": null
             },
             "isVisible": true,
@@ -111,16 +111,16 @@
           "id": "a8ifut9",
           "type": "point",
           "config": {
-            "dataId": "ukcommute",
-            "label": "residence",
+            "dataId": "data",
+            "label": "id",
             "color": [
               246,
               154,
               0
             ],
             "columns": {
-              "lat": "residence_lat",
-              "lng": "residence_lng",
+              "lat": "start_latitude",
+              "lng": "start_longitude",
               "altitude": null
             },
             "isVisible": true,
@@ -161,7 +161,7 @@
       "interactionConfig": {
         "tooltip": {
           "fieldsToShow": {
-            "ukcommute": [
+            "data": [
               "all_flows"
             ]
           },
